@@ -50,10 +50,10 @@ class Quiz {
 			    int answer = sc.nextInt();
 
 			    if (q.isCorrect(answer)) {
-			        System.out.println("✅ Correct!\n");
+			        System.out.println(" Correct!\n");
 			        score++;
 			    } else {
-			        System.out.println("❌ Wrong! Correct answer: " + q.getCorrectAnswer() + "\n");
+			        System.out.println(" Wrong! Correct answer: " + q.getCorrectAnswer() + "\n");
 			    }
 			}
 		}
@@ -68,12 +68,13 @@ class Result {
         System.out.println("Your Score: " + score + " / " + total);
 
         if (score == total) {
-            System.out.println("🎉 Excellent! Perfect Score!");
+            System.out.println(" Excellent! Perfect Score!");
         } else if (score >= total / 2) {
-            System.out.println("👍 Good Job!");
+            System.out.println(" Good Job!");
         } else {
-            System.out.println("👀 Keep practicing!");
+            System.out.println(" Keep practicing!");
         }
     }
 }
+
 
